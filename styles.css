@@ -1,0 +1,30 @@
+/* Set a striped background using forrest green, pink, and baby blue */
+/* The stripes are horizontal because we use 'to bottom' */
+body {
+  /* This creates horizontal stripes with forrest green, pink, and baby blue */
+  background: repeating-linear-gradient(
+    to bottom,         /* Stripes go from top to bottom, making them horizontal */
+    #228B22,           /* Forrest green */
+    #228B22 100px,     /* Forrest green for 100px */
+    pink 100px,        /* Pink starts at 100px */
+    pink 200px,        /* Pink for 100px */
+    #b3e0ff 200px,     /* Baby blue starts at 200px */
+    #b3e0ff 300px      /* Baby blue for 100px, then repeat */
+  );
+  color: white; /* Set all text to white */
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the pink header at the top of the page */
+.main-header {
+  background-color: pink; /* Pink background for the header */
+  padding: 20px;          /* Space inside the header */
+  text-align: center;     /* Center the text */
+  margin-bottom: 20px;    /* Space below the header */
+}
+
+.main-header h1 {
+  margin: 0;              /* Remove default margin */
+  color: #0074D9;         /* Blue text color for the header */
+}
